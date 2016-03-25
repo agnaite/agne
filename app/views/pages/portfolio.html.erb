@@ -1,0 +1,88 @@
+<div class="portfolio-content">
+  <h2 class="header centered ui portfolio-tagline">Here are some personal projects I have worked on in my spare time.</h2><h3 class="header centered ui">Click on the images for more info.</h3><br/><br/>
+  <div class="ui stackable three column grid portfolio-grid">
+  <!-- *************** COLUMN 1 *************** -->
+    <div class="column">
+
+    <!-- *************** UNOJI *************** -->
+      <div class="ui segment">
+        <img class="ui image unoji-click" src="<%= asset_path('unoji.png') %>">
+        <h3 class="header work-title">unoji.click</h3>
+      </div>
+      <!-- *************** UNOJI MODAL *************** -->
+      <div class="ui basic modal unoji-modal">
+        <%= render 'modal', title: 'unoji.click', image: 'unoji.png', description: 'Click on any emoticon ("unoji") to copy to clipboard. Select the plus symbol to expand a category. Requires flash.', stuff: 'Stuff used: HTML, CSS, jQuery, Bootstrap, ZeroClipboard.js, SweetAlert.js, Headroom.js, Expand.js.', date: 'January, 2015', link: 'http://unoji.click' %>
+      </div>
+
+      <!-- *************** UNTZ *************** -->
+      <div class="ui segment">
+        <img class="ui image untz-click" src="<%= asset_path('untz.png') %>">
+        <h3 class="header work-title">untz.club</h3>
+      </div>
+      <!-- *************** UNTZ MODAL *************** -->
+      <div class="ui basic modal untz-modal">
+        <%= render 'modal', title: 'untz.club', image: 'untz.png', description: 'Auto play Berlin\'s Flux.FM.', stuff: 'Stuff used: HTML, CSS, javascript.', date: 'July, 2014', link: 'http://untz.club' %>
+      </div>
+      
+      <!-- *************** CHRISTMAS *************** -->
+      <div class="ui segment">
+        <img class="ui image christmas-click" src="<%= asset_path('christmas.png') %>">
+        <h3 class="header work-title">christmas countdown</h3>
+      </div>
+      <!-- *************** CHRISTMAS MODAL *************** -->
+      <div class="ui basic modal christmas-modal">
+        <%= render 'modal', title: 'christmas countdown', image: 'christmas.png', description: 'Displays days left until Christmas.', stuff: 'Stuff used: HTML, CSS, javascript, node.js. Deployed on heroku.', date: 'February, 2016', link: 'https://shrouded-plateau-52539.herokuapp.com' %>
+      </div>
+      
+    </div>
+
+    <!-- *************** COLUMN 2 *************** -->
+    <div class="column">
+
+    <!-- *************** APPLE *************** -->
+      <div class="ui segment">
+        <img class="ui image apple-click" src="<%= asset_path('apple.png') %>">
+        <h3 class="header work-title">apple service center</h3>
+      </div>
+      <!-- *************** APPLE MODAL *************** -->
+      <div class="ui basic modal apple-modal">
+        <%= render 'modal', title: 'apple service center', image: 'apple.png', description: 'Website for the Apple Authorized Service Center at the University of Florida.', stuff: 'Stuff used: HTML, CSS, jQuery UI, Bootstrap.', date: 'June, 2015', link: 'http://apple.techhub.ufl.edu' %>
+      </div>
+      
+      <!-- *************** JURGITADISHMAN *************** -->
+      <div class="ui segment">
+        <img class="ui image jurgita-click" src="<%= asset_path('jurgitadishman.png') %>">
+        <h3 class="header work-title">jurgitadishman</h3>
+      </div>
+    </div>
+    <!-- *************** JURGITADISHMAN MODAL *************** -->
+      <div class="ui basic modal jurgita-modal">
+        <%= render 'modal', title: 'jurgita dishman', image: 'jurgitadishman.png', description: 'Porfolio website for Jurgita Dishman, a painter.', stuff: 'Stuff used: HTML, Sass, jQuery, Bootstrap, Jekyll.', date: 'December, 2015', link: 'http://jurgitadishman.com' %>
+    </div>
+
+    <!-- *************** COLUMN 3 *************** -->
+    <div class="column">
+
+      <!-- *************** THREADLY *************** -->
+      <div class="ui segment">
+        <img class="ui image threadly-click" src="<%= asset_path('threadly.png') %>">
+        <h3 class="header work-title">threadly</h3>
+      </div>
+      <!-- *************** THREADLY MODAL *************** -->
+      <div class="ui basic modal threadly-modal">
+        <%= render 'modal', title: 'threadly', image: 'threadly.png', description: 'Web app for posting/deleting messages. Try it!', stuff: 'Stuff used: HTML, Sass, Ruby on Rails.', date: 'March, 2016', link: 'http://threadly.untz.club' %>
+      </div>
+
+      <!-- *************** HEYAUDY *************** -->
+      <div class="ui segment">
+        <img class="ui image heyaudy-click" src="<%= asset_path('heyaudy.png') %>">
+        <h3 class="header work-title">heyaudy</h3>
+      </div>
+      <!-- *************** HEYAUDY MODAL *************** -->
+      <div class="ui basic modal heyaudy-modal">
+      <%= render 'modal', title: 'heyaudy', image: 'heyaudy.png', description: 'Personal site for Austin Davis-Richardson, a programmer and scientist.', stuff: 'Stuff used: HTML, CSS, FitText.js.', date: 'May, 2014', link: 'http://heyaudy.com' %>
+      </div>
+    </div>
+
+  </div>
+</div>

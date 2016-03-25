@@ -1,0 +1,268 @@
+$iphone5: 375px;
+$iphone5-landscape: 568px;
+$iphone6: 414px;
+$iphone6-landscape: 667px;
+$iphone6plus-landscape: 736px;
+$tablet:  768px;
+$tablet-landscape: 1024px;
+
+
+header {
+	@media (max-width: $iphone5) {
+		a {
+			font-size: 12px;
+		}
+	}
+}
+
+.main-content {
+	@media (max-width: $tablet){
+		.overlay-text {
+			top: 8%;
+		}
+	}
+
+	@media (max-width: $iphone6plus-landscape){
+		.overlay-text {
+			font-size: 28px;
+			top: 18%;
+		}
+	}
+
+	@media (max-width: $iphone6-landscape){
+		.overlay-text {
+			font-size: 20px;
+			top: 18%;
+		}
+	}
+	@media (max-width: $iphone6){
+		.overlay-text {
+			top: 12%;
+		}
+	}
+	@media (max-width: $iphone5){
+		.overlay-text {
+			font-size: 18px;
+			padding-right: 20px;
+		}
+	}
+}
+
+.about-content {
+	padding: 0 60px;
+	@media (max-width: $tablet-landscape){
+
+		.about-text {
+			padding-top: 100px;
+		}
+	}
+
+	@media (max-width: $tablet){
+			margin-bottom: 100px;
+
+			.ui.right.floated.images, .ui.right.floated.image {
+				float: none;
+				margin: 0 auto;
+				margin-top: 40px;
+				margin-bottom: 40px;
+			}
+
+			.about-text {
+				float: none;
+				padding: 0;
+
+				h1 {
+					text-align: center;
+				}
+				p {
+					text-align: justify;
+				}
+			}
+	}
+
+	@media (max-width: $iphone6plus-landscape) {
+		padding: 0 40px;
+
+		.ui.large.images .image, .ui.large.images img, .ui.large.images svg, .ui.large.image  {
+			width: 350px;
+		}
+
+		.about-text {
+				h1 {
+					font-size: 22px;
+				}
+				p {
+					font-size: 18px;
+				}
+			}
+	}
+	@media (max-width: $iphone6-landscape){
+
+		.ui.large.images .image, .ui.large.images img, .ui.large.images svg, .ui.large.image  {
+			width: 300px;
+		}
+
+		.about-text {
+			h1 {
+				font-size: 18px;
+			}
+			p {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+.contact-content {
+	@media (max-width: $tablet-landscape) {
+		.contact-list li {
+			padding-left: 10px;
+
+			a {
+				font-size: 18px;
+			}
+		}
+	}
+	@media (max-width: $tablet) {
+		padding-top: 180px;
+		.tagline {
+			padding: 0 120px;
+		}
+		h1.ui.header {
+			font-size: 28px !important;
+			line-height: 1.4;
+		}
+		.contact-list {
+			width: 36%;
+			margin: 0 auto;
+			li {
+				display: block;
+				text-align: left;
+				padding-bottom: 10px;
+				a {
+					font-size: 22px;
+				}
+			}
+		}
+	}
+	@media (max-width: $iphone6plus-landscape) {
+		padding-top: 40px;
+		margin-bottom: 100px;
+
+		h1.ui.header {
+			font-size: 26px !important;
+		}
+
+		.contact-list {
+			padding-left: 50px;
+			width: 50%;
+			a {
+					font-size: 20px;
+			}
+		}
+	}
+
+	@media (max-width: $iphone6-landscape) {
+		h1.ui.header {
+				font-size: 22px !important;
+		}
+		.contact-list {
+			padding-left: 50px;
+			li a {
+					font-size: 18px;
+			}
+		}
+	}
+	@media (max-width: $iphone5-landscape) {
+		.tagline {
+				padding: 0 10px;
+				h1.ui.header {
+					font-size: 20px !important;
+				}
+			}
+	} 
+
+	@media (max-width: $iphone6) {
+		padding-top: 100px;
+		.tagline {
+			h1.ui.header {
+				span {
+					display: none;
+				}
+			}
+		}
+		.contact-list {
+			padding-left: 0px;
+			width: 100%;
+			li {
+				text-align: center;
+				a span {
+					display: none;
+				}
+			}
+		}
+	}
+	@media (max-width: $iphone5) {
+		.tagline {
+			padding: 0 0px;
+			h1.ui.header {
+				font-size: 18px !important;
+			}
+		}
+	}
+}
+
+.portfolio-content {
+	@media (max-width: $tablet-landscape) {
+		padding: 100px 60px 0 60px;
+		.column {
+			.work-title {
+				font-size: 14px;
+			}
+		}
+	}
+	@media (max-width: $iphone6plus-landscape) {
+		.column {
+			.work-title {
+				font-size: 18px;
+			}
+		}
+	}
+	@media (max-width: $iphone6) {
+		padding: 80px 20px 0 20px;
+
+	}
+	@media (max-width: $iphone5) {
+		padding: 60px 5px 0 5px;
+
+	}
+}
+
+.main-footer {
+	@media (max-width: $tablet-landscape) {
+		.footer-icons {
+			padding-top: 12px;
+		}
+	}
+
+	@media (max-width: $iphone6plus-landscape){
+		.footer-icons {
+			padding-top: 16px;
+		}
+	}
+
+	@media (max-width: $iphone6-landscape) {
+		.footer-sources {
+			display: none;
+		}
+		.footer-icons {
+			position: relative;
+			padding-bottom: 20px;
+			padding-top: 0;
+			margin: 0 auto;
+		}
+	}
+}
+
+
+

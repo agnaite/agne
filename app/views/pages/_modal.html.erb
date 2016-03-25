@@ -1,0 +1,17 @@
+<div class="header">
+  <a class= "header modal-title" href="<%= link %>"><%= title %></a>
+</div>
+<div class="image content modal-img">
+  <div class="image">
+    <img class="ui rounded image" src="<%= asset_path(image) %>">
+  </div>
+</div>
+<div class="content description modal-description">
+  <h3><%= description %></h3>
+  <p><%= stuff %></p>
+  <p>Created in <%= date %>.</p>
+</div>
+<div class="actions">
+  <div class="ui basic inverted button cancel">Close</div>
+  <a class="ui basic inverted button" href="<%= link %>">Visit Site</a>
+</div>
