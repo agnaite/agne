@@ -2,6 +2,21 @@ $light-grey: #e8e8e8;
 $text-grey: rgba(0,0,0,.87);
 $text-light-grey: rgba(0,0,0,.7);
 
+/*******************************
+             Icon
+*******************************/
+
+@font-face {
+  font-family: 'Icons';
+  src: font-url("icons.eot");
+  src: font-url("icons.eot?#iefix") format('embedded-opentype'), font-url("icons.woff2") format('woff2'), font-url("icons.woff") format('woff'), font-url("icons.ttf") format('truetype'), font-url("icons.svg#icons") format('svg');
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-decoration: inherit;
+  text-transform: none;
+}
+
 * {
 	color: $text-grey;
 	font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
