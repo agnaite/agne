@@ -8,6 +8,7 @@
  * http://opensource.org/licenses/MIT
  *
  */
+
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin');
 /*!
  * # Semantic UI 2.1.7 - Reset
@@ -7010,8 +7011,8 @@ a.ui.inverted.grey.header:hover {
 
 @font-face {
   font-family: 'Icons';
-  src: url("/assets/icons.eot");
-  src: url("/assets/icons.eot?#iefix") format('embedded-opentype'), url("/assets/icons.woff2") format('woff2'), url("/assets/icons.woff") format('woff'), url("/assets/icons.ttf") format('truetype'), url("/assets/icons.svg#icons") format('svg');
+  src: font-url("assets/icons.eot");
+  src: font-url("assets/icons.eot?#iefix") format('embedded-opentype'), font-url("assets/icons.woff2") format('woff2'), font-url("assets/icons.woff") format('woff'), font-url("assets/icons.ttf") format('truetype'), font-url("assets/icons.svg#icons") format('svg');
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -35168,3 +35169,492 @@ html.ios body {
 /*******************************
          Site Overrides
 *******************************/
+/* line 5, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+* {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+/* line 10, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+header {
+  padding: 0 4px;
+  z-index: 1000;
+  background-color: white;
+}
+
+/* line 16, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.main-content {
+  width: 100%;
+}
+/* line 19, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.main-content .main-img {
+  z-index: -1000;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+/* line 29, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.main-content .overlay-text {
+  position: absolute;
+  left: 0;
+  top: 12%;
+  width: 100%;
+  text-align: right;
+  font-size: 40px;
+  padding-right: 40px;
+  font-weight: 700;
+  color: white;
+  line-height: 1.5;
+}
+/* line 41, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.main-content .overlay-text .overlay-name {
+  background-color: #e8e8e8;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 6px;
+  border-radius: 4px;
+}
+
+/* line 50, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.about-content {
+  width: 100%;
+  padding: 40px 80px;
+}
+/* line 54, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.about-content .about-img {
+  margin-top: 100px;
+}
+/* line 58, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.about-content .about-text {
+  width: 100%;
+  padding-top: 220px;
+  padding-right: 540px;
+}
+/* line 63, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.about-content .about-text p {
+  font-size: 20px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/* line 71, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.contact-content {
+  padding-top: 220px;
+}
+/* line 74, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.contact-content .contact-list {
+  width: 100%;
+  padding-top: 60px;
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+  display: block;
+}
+/* line 82, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.contact-content .contact-list li {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding-left: 40px;
+}
+/* line 87, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.contact-content .contact-list li a {
+  font-size: 22px;
+  padding: 6px 6px 8px 6px;
+  font-weight: 600;
+}
+/* line 92, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.contact-content .contact-list li a:hover {
+  background-color: #e8e8e8;
+  border-radius: 4px;
+}
+/* line 97, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.contact-content .contact-list li a i {
+  margin-right: 16px;
+  margin-bottom: 4px;
+}
+
+/* line 106, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.portfolio-content {
+  padding: 100px 100px 0 100px;
+}
+/* line 109, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.portfolio-content .portfolio-tagline {
+  margin-bottom: -16px;
+}
+/* line 113, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.portfolio-content img {
+  border: 1px solid #e8e8e8;
+  cursor: pointer;
+}
+/* line 118, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.portfolio-content .work-title {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 10px;
+}
+/* line 124, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.portfolio-content .portfolio-grid {
+  padding-bottom: 100px;
+}
+
+/* line 131, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.modal .modal-img {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+/* line 137, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.modal .modal-title {
+  color: white;
+  font-size: 24px;
+}
+/* line 141, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.modal .modal-title:hover {
+  color: #e8e8e8;
+}
+/* line 146, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.modal h3 {
+  color: white;
+}
+/* line 150, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.modal p {
+  font-size: 16px;
+  color: white;
+}
+
+/* line 156, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.main-footer {
+  padding: 0 4px;
+}
+/* line 159, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.main-footer .footer-sources {
+  width: 33%;
+  padding: 8px 0 0 12px;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+}
+/* line 166, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.main-footer .footer-icons {
+  display: inline;
+  text-align: right;
+  position: absolute;
+  right: 4px;
+  height: 100%;
+}
+/* line 173, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.main-footer .footer-icons .footer-icon {
+  padding: 10px;
+  height: 100%;
+}
+/* line 177, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.main-footer .footer-icons .footer-icon i {
+  padding: 14px 6px;
+}
+/* line 181, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/pages.scss */
+.main-footer .footer-icons .footer-icon:hover {
+  background-color: #e8e8e8;
+}
+@media (max-width: 375px) {
+  /* line 12, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  header a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 20, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .main-content .overlay-text {
+    top: 8%;
+  }
+}
+@media (max-width: 736px) {
+  /* line 26, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .main-content .overlay-text {
+    font-size: 28px;
+    top: 18%;
+  }
+}
+@media (max-width: 667px) {
+  /* line 33, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .main-content .overlay-text {
+    font-size: 20px;
+    top: 18%;
+  }
+}
+@media (max-width: 414px) {
+  /* line 39, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .main-content .overlay-text {
+    top: 12%;
+  }
+}
+@media (max-width: 375px) {
+  /* line 44, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .main-content .overlay-text {
+    font-size: 18px;
+    padding-right: 20px;
+  }
+}
+
+/* line 51, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+.about-content {
+  padding: 0 60px;
+}
+@media (max-width: 1024px) {
+  /* line 55, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .about-content .about-text {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 51, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .about-content {
+    margin-bottom: 100px;
+  }
+  /* line 63, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .about-content .ui.right.floated.images, .about-content .ui.right.floated.image {
+    float: none;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  /* line 70, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .about-content .about-text {
+    float: none;
+    padding: 0;
+  }
+  /* line 74, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .about-content .about-text h1 {
+    text-align: center;
+  }
+  /* line 77, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .about-content .about-text p {
+    text-align: justify;
+  }
+}
+@media (max-width: 736px) {
+  /* line 51, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .about-content {
+    padding: 0 40px;
+  }
+  /* line 86, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .about-content .ui.large.images .image, .about-content .ui.large.images img, .about-content .ui.large.images svg, .about-content .ui.large.image {
+    width: 350px;
+  }
+  /* line 91, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .about-content .about-text h1 {
+    font-size: 22px;
+  }
+  /* line 94, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .about-content .about-text p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 667px) {
+  /* line 101, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .about-content .ui.large.images .image, .about-content .ui.large.images img, .about-content .ui.large.images svg, .about-content .ui.large.image {
+    width: 300px;
+  }
+  /* line 106, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .about-content .about-text h1 {
+    font-size: 18px;
+  }
+  /* line 109, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .about-content .about-text p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* line 118, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .contact-content .contact-list li {
+    padding-left: 10px;
+  }
+  /* line 121, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .contact-content .contact-list li a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 116, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .contact-content {
+    padding-top: 180px;
+  }
+  /* line 128, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .contact-content .tagline {
+    padding: 0 120px;
+  }
+  /* line 131, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .contact-content h1.ui.header {
+    font-size: 28px !important;
+    line-height: 1.4;
+  }
+  /* line 135, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .contact-content .contact-list {
+    width: 36%;
+    margin: 0 auto;
+  }
+  /* line 138, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .contact-content .contact-list li {
+    display: block;
+    text-align: left;
+    padding-bottom: 10px;
+  }
+  /* line 142, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .contact-content .contact-list li a {
+    font-size: 22px;
+  }
+}
+@media (max-width: 736px) {
+  /* line 116, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .contact-content {
+    padding-top: 40px;
+    margin-bottom: 100px;
+  }
+  /* line 152, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .contact-content h1.ui.header {
+    font-size: 26px !important;
+  }
+  /* line 156, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .contact-content .contact-list {
+    padding-left: 50px;
+    width: 50%;
+  }
+  /* line 159, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .contact-content .contact-list a {
+    font-size: 20px;
+  }
+}
+@media (max-width: 667px) {
+  /* line 166, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .contact-content h1.ui.header {
+    font-size: 22px !important;
+  }
+  /* line 169, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .contact-content .contact-list {
+    padding-left: 50px;
+  }
+  /* line 171, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .contact-content .contact-list li a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 568px) {
+  /* line 177, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .contact-content .tagline {
+    padding: 0 10px;
+  }
+  /* line 179, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .contact-content .tagline h1.ui.header {
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 414px) {
+  /* line 116, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .contact-content {
+    padding-top: 100px;
+  }
+  /* line 189, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .contact-content .tagline h1.ui.header span {
+    display: none;
+  }
+  /* line 194, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .contact-content .contact-list {
+    padding-left: 0px;
+    width: 100%;
+  }
+  /* line 197, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .contact-content .contact-list li {
+    text-align: center;
+  }
+  /* line 199, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .contact-content .contact-list li a span {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  /* line 206, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .contact-content .tagline {
+    padding: 0 0px;
+  }
+  /* line 208, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .contact-content .tagline h1.ui.header {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* line 215, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .portfolio-content {
+    padding: 100px 60px 0 60px;
+  }
+  /* line 219, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .portfolio-content .column .work-title {
+    font-size: 14px;
+  }
+}
+@media (max-width: 736px) {
+  /* line 226, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .portfolio-content .column .work-title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 414px) {
+  /* line 215, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .portfolio-content {
+    padding: 80px 20px 0 20px;
+  }
+}
+@media (max-width: 375px) {
+  /* line 215, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .portfolio-content {
+    padding: 60px 5px 0 5px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* line 243, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .main-footer .footer-icons {
+    padding-top: 12px;
+  }
+}
+@media (max-width: 736px) {
+  /* line 249, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .main-footer .footer-icons {
+    padding-top: 16px;
+  }
+}
+@media (max-width: 667px) {
+  /* line 255, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .main-footer .footer-sources {
+    display: none;
+  }
+  /* line 258, /Users/agne/Documents/Code/portfolio/app/assets/stylesheets/responsive.scss */
+  .main-footer .footer-icons {
+    position: relative;
+    padding-bottom: 20px;
+    padding-top: 0;
+    margin: 0 auto;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+ */
+
+
