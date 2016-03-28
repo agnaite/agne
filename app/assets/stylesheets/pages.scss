@@ -153,31 +153,4 @@ header {
 		}
 }
 
-.main-footer {
-	padding: 0 4px;
 
-	.footer-sources {
-		width: 33%;
-		padding: 8px 0 0 12px;
-		letter-spacing: 0.5px;
-		font-size: 12px;
-	}
-
-	.footer-icons {
-		display: inline;
-		text-align: right;
-		position: absolute;
-		right: 4px;
-		height: 100%;
-		padding-top: 16px;
-		
-		.footer-icon {
-			padding: 12px;
-			height: 100%;
-
-			i:hover {
-				color: $text-light-grey;
-			}	
-		}
-	}
-}
