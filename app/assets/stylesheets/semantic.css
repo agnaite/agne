@@ -611,7 +611,7 @@ p:last-child {
 --------------------*/
 
 a {
-  color: #fff;
+  color: #4183c4;
   text-decoration: none;
 }
 
@@ -7010,20 +7010,14 @@ a.ui.inverted.grey.header:hover {
 
 @font-face {
   font-family: 'Icons';
-  src: url("/assets/icons.eot");
-  src: url("/assets/icons.eot?#iefix") format('embedded-opentype'),
-       url("/assets/icons.woff2") format('woff2'),
-       url("/assets/icons.woff") format('woff'),
-       url("/assets/icons.ttf") format('truetype'),
-       url("/assets/icons.svg#icons") format('svg');
+  src: url("themes/default/assets/fonts/icons.eot");
+  src: url("themes/default/assets/fonts/icons.eot?#iefix") format('embedded-opentype'), url("themes/default/assets/fonts/icons.woff2") format('woff2'), url("themes/default/assets/fonts/icons.woff") format('woff'), url("themes/default/assets/fonts/icons.ttf") format('truetype'), url("themes/default/assets/fonts/icons.svg#icons") format('svg');
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-decoration: inherit;
   text-transform: none;
 }
-
-
 
 i.icon {
   display: inline-block;
