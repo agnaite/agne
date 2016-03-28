@@ -1,10 +1,6 @@
-$light-grey: #e8e8e8;
+$light-grey: rgba(0, 0, 0, 0.05);
 $text-grey: rgba(0,0,0,.87);
 $text-light-grey: rgba(0,0,0,.7);
-
-/*******************************
-             Icon
-*******************************/
 
 * {
 	color: $text-grey;
@@ -173,17 +169,14 @@ header {
 		position: absolute;
 		right: 4px;
 		height: 100%;
+		padding-top: 16px;
 		
 		.footer-icon {
-			padding: 10px;
+			padding: 12px;
 			height: 100%;
-			
-			i {
-				padding: 14px 6px;
-			}
 
-		&:hover {
-				background-color: $light-grey;
+			i:hover {
+				color: $text-light-grey;
 			}	
 		}
 	}

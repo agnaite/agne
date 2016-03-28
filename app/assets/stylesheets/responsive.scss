@@ -155,7 +155,7 @@ header {
 
 		.contact-list {
 			padding-left: 50px;
-			width: 50%;
+			width: 60%;
 			a {
 					font-size: 20px;
 			}
@@ -241,13 +241,7 @@ header {
 .main-footer {
 	@media (max-width: $tablet-landscape) {
 		.footer-icons {
-			padding-top: 12px;
-		}
-	}
-
-	@media (max-width: $iphone6plus-landscape){
-		.footer-icons {
-			padding-top: 16px;
+			padding-top: 24px;
 		}
 	}
 
@@ -258,7 +252,6 @@ header {
 		.footer-icons {
 			position: relative;
 			padding-bottom: 20px;
-			padding-top: 0;
 			margin: 0 auto;
 		}
 	}
