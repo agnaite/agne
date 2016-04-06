@@ -1,5 +1,5 @@
 <div class="portfolio-content">
-  <h2 class="header centered ui portfolio-tagline">Here are some personal projects I have worked on in my spare time.</h2><h3 class="header centered ui">Click on the images for more info.</h3><br/><br/>
+  <h2 class="header centered ui portfolio-tagline">A selection of ongoing projects</h2><h3 class="header centered ui">Click on the images for more info.</h3><br/><br/>
   <div class="ui stackable three column grid portfolio-grid">
   <!-- *************** COLUMN 1 *************** -->
     <div class="column">
@@ -11,17 +11,17 @@
       </div>
       <!-- *************** UNOJI MODAL *************** -->
       <div class="ui basic modal unoji-modal">
-        <%= render 'modal', title: 'unoji.click', image: 'unoji.png', description: 'Click on any emoticon ("unoji") to copy to clipboard. Select the plus symbol to expand a category. Requires flash.', stuff: 'Stuff used: HTML, CSS, jQuery, Bootstrap, ZeroClipboard.js, SweetAlert.js, Headroom.js, Expand.js.', date: 'January, 2015', link: 'http://unoji.click' %>
+        <%= render 'modal', title: 'unoji.click', image: 'unoji.png', description: 'Click on any emoticon ("unoji") to copy to clipboard. Select the plus symbol to expand a category. Requires flash.', stuff: 'Tools used: HTML, CSS, JQuery, Bootstrap, ZeroClipboard.js, SweetAlert.js, Headroom.js, Expand.js.', date: 'January, 2015', link: 'http://unoji.click' %>
       </div>
 
-      <!-- *************** UNTZ *************** -->
+      <!-- *************** ALTA *************** -->
       <div class="ui segment">
-        <img class="ui image untz-click" src="<%= asset_path('untz.png') %>">
-        <h3 class="header work-title">untz.club</h3>
+        <img class="ui image alta-click" src="<%= asset_path('alta-thumb.png') %>">
+        <h3 class="header work-title">alta</h3>
       </div>
-      <!-- *************** UNTZ MODAL *************** -->
-      <div class="ui basic modal untz-modal">
-        <%= render 'modal', title: 'untz.club', image: 'untz.png', description: 'Auto play Berlin\'s Flux.FM.', stuff: 'Stuff used: HTML, CSS, javascript.', date: 'July, 2014', link: 'http://untz.club' %>
+      <!-- *************** ALTA MODAL *************** -->
+      <div class="ui basic modal alta-modal">
+        <%= render 'modal', title: 'alta systems', image: 'alta.png', description: 'Website for a startup in Miami, FL. (pages completed: Contact, About/Team, Products/Public Safety)', stuff: 'Tools used: HTML, CSS, Jekyll, Bootstrap, JQuery.', date: 'November, 2015 (in progress)', link: 'http://agne.space/alta/index.html' %>
       </div>
       
       <!-- *************** CHRISTMAS *************** -->
@@ -31,7 +31,7 @@
       </div>
       <!-- *************** CHRISTMAS MODAL *************** -->
       <div class="ui basic modal christmas-modal">
-        <%= render 'modal', title: 'christmas countdown', image: 'christmas.png', description: 'Displays days left until Christmas.', stuff: 'Stuff used: HTML, CSS, javascript, node.js. Deployed on heroku.', date: 'February, 2016', link: 'https://shrouded-plateau-52539.herokuapp.com' %>
+        <%= render 'modal', title: 'christmas countdown', image: 'christmas.png', description: 'Displays days left until Christmas.', stuff: 'Tools used: HTML, CSS, javascript, node.js. Deployed on heroku.', date: 'February, 2016', link: 'https://shrouded-plateau-52539.herokuapp.com' %>
       </div>
       
     </div>
@@ -46,7 +46,7 @@
       </div>
       <!-- *************** APPLE MODAL *************** -->
       <div class="ui basic modal apple-modal">
-        <%= render 'modal', title: 'apple service center', image: 'apple.png', description: 'Website for the Apple Authorized Service Center at the University of Florida.', stuff: 'Stuff used: HTML, CSS, jQuery UI, Bootstrap.', date: 'June, 2015', link: 'http://apple.techhub.ufl.edu' %>
+        <%= render 'modal', title: 'apple service center', image: 'apple.png', description: 'Website for the Apple Authorized Service Center at the University of Florida.', stuff: 'Tools used: HTML, CSS, JQuery UI, Bootstrap.', date: 'June, 2015', link: 'http://apple.techhub.ufl.edu' %>
       </div>
       
       <!-- *************** JURGITADISHMAN *************** -->
@@ -54,12 +54,22 @@
         <img class="ui image jurgita-click" src="<%= asset_path('jurgitadishman-thumb.png') %>">
         <h3 class="header work-title">jurgitadishman</h3>
       </div>
-    </div>
+    
     <!-- *************** JURGITADISHMAN MODAL *************** -->
       <div class="ui basic modal jurgita-modal">
-        <%= render 'modal', title: 'jurgita dishman', image: 'jurgitadishman.png', description: 'Porfolio website for Jurgita Dishman, a painter.', stuff: 'Stuff used: HTML, Sass, jQuery, Bootstrap, Jekyll.', date: 'December, 2015', link: 'http://jurgitadishman.com' %>
+        <%= render 'modal', title: 'jurgita dishman', image: 'jurgitadishman.png', description: 'Porfolio website for Jurgita Dishman, a painter.', stuff: 'Tools used: HTML, Sass, JQuery, Bootstrap, Jekyll.', date: 'December, 2015', link: 'http://jurgitadishman.com' %>
     </div>
 
+    <!-- *************** UNTZ *************** -->
+      <div class="ui segment">
+        <img class="ui image untz-click" src="<%= asset_path('untz.png') %>">
+        <h3 class="header work-title">untz.club</h3>
+      </div>
+      <!-- *************** UNTZ MODAL *************** -->
+      <div class="ui basic modal untz-modal">
+        <%= render 'modal', title: 'untz.club', image: 'untz.png', description: 'Auto play Berlin\'s Flux.FM.', stuff: 'Tools used: HTML, CSS, javascript.', date: 'July, 2014', link: 'http://untz.club' %>
+      </div>
+    </div>
     <!-- *************** COLUMN 3 *************** -->
     <div class="column">
 
@@ -70,7 +80,7 @@
       </div>
       <!-- *************** THREADLY MODAL *************** -->
       <div class="ui basic modal threadly-modal">
-        <%= render 'modal', title: 'threadly', image: 'threadly.png', description: 'Web app for posting/deleting messages. Try it!', stuff: 'Stuff used: HTML, Sass, Ruby on Rails.', date: 'March, 2016', link: 'http://threadly.untz.club' %>
+        <%= render 'modal', title: 'threadly', image: 'threadly.png', description: 'Web app for posting/deleting messages. Try it!', stuff: 'Tools used: HTML, Sass, Ruby on Rails. Deployed on heroku.', date: 'March, 2016', link: 'http://threadly.untz.club' %>
       </div>
 
       <!-- *************** HEYAUDY *************** -->
@@ -80,7 +90,7 @@
       </div>
       <!-- *************** HEYAUDY MODAL *************** -->
       <div class="ui basic modal heyaudy-modal">
-      <%= render 'modal', title: 'heyaudy', image: 'heyaudy.png', description: 'Personal site for Austin Davis-Richardson, a programmer and scientist.', stuff: 'Stuff used: HTML, CSS, FitText.js.', date: 'May, 2014', link: 'http://heyaudy.com' %>
+      <%= render 'modal', title: 'heyaudy', image: 'heyaudy.png', description: 'Personal site for Austin Davis-Richardson, a programmer and scientist.', stuff: 'Tools used: HTML, CSS, FitText.js.', date: 'May, 2014', link: 'http://heyaudy.com' %>
       </div>
     </div>
 
